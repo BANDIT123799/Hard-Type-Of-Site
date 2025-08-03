@@ -83,3 +83,66 @@ nav a {
 nav a:hover {
     font-size: 18px;
 }
+
+.article {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-placeholder {
+    flex-shrink: 0;
+    width: 150px;
+    height: 120px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+.image-placeholder:hover {
+    width: 160px;
+    height: 130px;
+}
+
+.image-placeholder h4 {
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    color: #33cc33;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-placeholder:hover h4 {
+    opacity: 1;
+}
+
+.text-content {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.text-content h3 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.text-content p {
+  margin-top: 5px;
+  color: #333;
+  font-size: 0.95em;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
