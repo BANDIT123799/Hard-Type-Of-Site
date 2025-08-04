@@ -4,10 +4,10 @@ html {
 
 header {
     display: flex;
-    background-color: darkgrey;
+    background-color: #fff9e6;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #b35900;
     width: 100%;
     max-width: 1920px;
     height: 70px;
@@ -20,7 +20,7 @@ header {
 footer {
     position: absolute;
     display: flex;
-    background-color: darkgrey;
+    background-color: #fff9e6;
     max-height: 70px;
     min-height: 70px;
     height: 70px;
@@ -34,10 +34,11 @@ footer {
 }
 
 .footer {
-    color: white;
+    color: #b35900;
 }
 
 body {
+    background-color: #fff9e6;
     margin: 0 auto;
     min-height: 100%;
     position: relative;
@@ -74,7 +75,7 @@ main {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #b35900;
     padding: 5px 15px;
     font-size: 15px;
     transition: font-size 0.5s ease-in-out;
@@ -201,3 +202,81 @@ nav a:hover {
 .grid-item:hover .textbox {
     opacity: 1;
 }
+
+.about-page h1 {
+    display: flex;
+    margin: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-page p {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #aaa;
+  margin: 40px auto;
+  width: 80%;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 48px);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 75px;
+}
+
+.contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48px;
+    text-align: center;
+    height: 48px;
+}
+
+.contact img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: none;
+    transition: filter 0.3s ease-in-out;
+}
+
+.contact-text {
+    filter: blur(7px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    text-align: center;
+    pointer-events: none;
+    transition: filter 2s ease-in-out;
+    transition: font-size 0.5s ease-in-out;
+}
+
+.contact:hover img {
+    filter: blur(2px);
+}
+
+.contact:hover .contact-text {
+    opacity: 1;
+    font-size: 15px;
+    filter: none;
+}
+
+body, main, main * {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
